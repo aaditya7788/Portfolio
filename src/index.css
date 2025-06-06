@@ -1,0 +1,114 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+  :root {
+    --bg-color: #fdfdfd;
+    --dark-color: #0f172a;
+    --text-color: #333;
+    --text-white-color: #fff;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+  }
+
+  /* 🌙 Dark mode overrides */
+  .dark {
+    --bg-color: #10041c;
+    --text-color: #ffffff;
+    --main-color: #a855f7; /* Optional: slightly brighter main color in dark mode */
+  }
+
+
+  :root {
+      --bs-breakpoint-xs: 0;
+      --bs-breakpoint-sm: 576px;
+      --bs-breakpoint-md: 768px;
+      --bs-breakpoint-lg: 992px;
+      --bs-breakpoint-xl: 1200px;
+      --bs-breakpoint-xxl: 1400px;
+  }
+
+  .profession-circle {
+    align-self: center;
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    z-index: -30;
+  }
+
+.profession {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  text-align: center;
+  color: var(--main-color);
+  padding: auto; /* or tweak as needed */
+  z-index: 2; /* Ensure it appears above the circle */
+  transform: translate(-50%, -50%); /* 💥 Centering fix */
+}
+
+
+
+
+
+  .profession i {
+    font-size: 4rem;
+    display: block;
+  }
+
+  .profession h3 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+  .profession i {
+    font-size: 2.5rem; /* Smaller icon for mobile */
+  }
+
+  .profession h3 {
+    font-size: 1.25rem; /* Smaller heading */
+    margin-top: 0.25rem;
+  }
+}
+
+  .circle {
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  /* Optional slow rotation */
+  @keyframes spin-slow {
+  0%, 20% {
+      transform: rotate(0deg);
+  }
+  25%, 45% {
+      transform: rotate(-90deg);
+  }
+  50%, 70% {
+      transform: rotate(-180deg);
+  }
+  75%, 95% {
+      transform: rotate(-270deg);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
