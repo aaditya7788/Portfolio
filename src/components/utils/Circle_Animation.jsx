@@ -10,10 +10,9 @@ const Circle_Animation = ({ dark }) => {
 
   return (
  <div
-  className={`absolute top-[30vh] left-1/2 transform -translate-x-1/2 sm:right-[50vw] sm:left-auto sm:translate-x-0 md:top-[25vh] md:right-[20vw] w-[50vh] h-[50vh] mx-auto -z-10 ${
-    isMobile ? 'clip-half-circle' : ''
-  }`}
+  className={`absolute top-[30vh] left-1/2 transform -translate-x-1/2 sm:right-[50vw] sm:left-auto sm:translate-x-0 md:top-[25vh] md:right-[20vw] w-[50vh] h-[50vh] mx-auto -z-10`}
 >
+
 
       <div className="profession-circle animate-spin-slow w-full h-full relative">
         {professions.map((item, index) => {

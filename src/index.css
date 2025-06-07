@@ -116,8 +116,9 @@ html {
 
 /* In your CSS or Tailwind global styles */
 @media (max-width: 640px) {
-  .clip-half-circle {
-    clip-path: inset(0 0 50% 0); /* top half only */
-  }
+  .clip-top-half {
+ clip-path: ellipse(100% 50% at 50% 50%);
+}
+
 }
 

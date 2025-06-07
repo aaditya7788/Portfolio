@@ -7,7 +7,7 @@ const AboutMe = ({ dark }) => {
       className="relative flex flex-col md:flex-row justify-center items-center gap-y-12 md:gap-x-20 px-6 md:px-20 mt-[8rem] mb-[8rem]"
     >
       {/* Profile Image */}
-      <div className="w-[80%] md:w-[40%] border-8 border-[var(--main-color)] bg-main rounded-xl overflow-hidden">
+      <div className="w-[80%] md:w-[40%] mt-[5vh] border-8 border-[var(--main-color)] bg-main rounded-xl overflow-hidden">
         <img data-aos="zoom-in" data-aos-duration="500" src="profile2.png" alt="Profile" className="w-full h-auto object-cover" />
       </div>
 
