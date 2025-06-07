@@ -57,7 +57,7 @@ const Hero = ({dark}) => {
         {/* Download Button */}
         <div className="mt-6 flex items-center gap-4">
           <a data-aos="fade-up" data-aos-duration="2000"
-            href="#"
+            href="Aaditya Resume.pdf"
             className="bg-main text-white px-6 py-3 rounded hover:brightness-110 transition"
           >
             Download CV
