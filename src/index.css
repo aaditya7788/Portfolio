@@ -112,3 +112,12 @@ html {
   .animate-spin-slow {
     animation: spin-slow 20s linear infinite;
   }
+
+
+/* In your CSS or Tailwind global styles */
+@media (max-width: 640px) {
+  .clip-half-circle {
+    clip-path: inset(0 0 50% 0); /* top half only */
+  }
+}
+
