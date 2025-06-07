@@ -67,7 +67,7 @@ const Hero = ({dark}) => {
 
       {/* Right Image */}
       <div className="hidden md:block md:w-1/2 justify-center mt-16 md:mt-0 z-10">
-        <img data-aos="fade-up" data-aos-duration="1500"
+        <img data-aos="zoomin" data-aos-duration="500"
           src="profile.png"
           alt="Profile"
           className="w-[80%] max-w-[350px] object-contain absolute right-20 bottom-0"
