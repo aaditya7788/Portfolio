@@ -49,7 +49,7 @@ const Hero = ({dark}) => {
           <a data-aos="fade-up" data-aos-duration="1400" href="https://github.com/aaditya7788" target="_blank" rel="noopener noreferrer">
             <i className="bx bxl-github text-[var(--main-color)] border p-4 rounded-full border-[var(--main-color)] hover:bg-[var(--main-color)] hover:text-white transition" />
           </a>
-          <a data-aos="fade-up" data-aos-duration="1600" href="https://www.linkedin.com/in/aadityasahani" target="_blank" rel="noopener noreferrer">
+          <a data-aos="fade-up" data-aos-duration="1600" href="https://www.linkedin.com/in/aadityasahani78" target="_blank" rel="noopener noreferrer">
             <i className="bx bxl-linkedin text-[var(--main-color)] border p-4 rounded-full border-[var(--main-color)] hover:bg-[var(--main-color)] hover:text-white transition" />
           </a>
         </div>
