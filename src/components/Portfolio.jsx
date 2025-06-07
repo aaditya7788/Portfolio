@@ -29,17 +29,17 @@ const Portfolio = ({ dark }) => {
   ];
 
   return (
-    <section id='portfolio' className='relative flex flex-col items-center justify-center mt-[10rem] mb-[10rem] '>
+    <section id='portfolio' className='relative flex flex-col items-center justify-center mt-[10rem] mb-[10rem] overflow-hidden'>
       <div className='flex-wrap gap-x-4 mb-10'>
         <h1 className={`font-bold text-2xl md:text-6xl ${!dark ? 'text-text-color' : 'text-white-color'}`}>
           Latest <span className='text-[var(--main-color)]'>Scratch</span> Projects
         </h1>
       </div>
 
-      <div className='flex flex-col md:flex-row flex-wrap justify-center items-start gap-10 overflow-x-auto'>
+      <div className='flex flex-col md:flex-row flex-wrap justify-center items-start gap-10 overflow-hidden'>
         {projects.map((project, index) => ( 
           <div data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
-          data-aos-duration={1500 + index * 1500}
+          data-aos-duration={1500 + index * 100}
             key={index}
             className='group relative md:w-[40vw] md:h-[50vh] rounded-3xl overflow-hidden shadow-2xl border-gray-300 dark:border-gray-700'
           >

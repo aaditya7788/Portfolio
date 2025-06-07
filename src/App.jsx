@@ -22,7 +22,7 @@ function App() {
         <div> {/* Apply dark mode class */}
       <Header dark={dark} setdark={setdark} />
       
-            <div className={`overflow-auto ${dark ? 'dark:bg-[#0f172a]' : ''} px-4 md:px-28`}>
+            <div className={`overflow-hidden ${dark ? 'dark:bg-[#0f172a]' : ''} px-4 md:px-28`}>
 
               <Hero dark={dark} setdark={setdark}/>
               <AboutMe dark={dark}/>

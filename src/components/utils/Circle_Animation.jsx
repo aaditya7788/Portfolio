@@ -11,7 +11,7 @@ const Circle_Animation = ({ dark }) => {
   ];
 
   return (
-<div className="absolute top-[30vh] left-1/2 transform -z-20 -translate-x-1/2 sm:right-[50vw] sm:left-auto sm:translate-x-0 md:top-[30vh] md:right-[20vw] w-[50vh] h-[50vh] mx-auto">
+<div className="absolute top-[30vh] left-1/2 transform -z-20 -translate-x-1/2 sm:right-[50vw] sm:left-auto sm:translate-x-0 md:top-[25vh] md:right-[20vw] w-[50vh] h-[50vh] mx-auto">
 
       <div className="profession-circle animate-spin-slow">
         {professions.map((item, index) => {
