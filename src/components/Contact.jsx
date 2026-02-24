@@ -5,7 +5,7 @@ const Contact = ({ dark }) => {
     <section id='contact' className='py-20 px-4 sm:px-8'>
       <div className='container mx-auto flex flex-col items-center'>
         <h1 data-aos="fade-up" data-aos-duration="1000" className='text-3xl sm:text-5xl font-bold text-center mb-16 text-[var(--main-color)]'>
-          <span className={`${dark ? 'text-white' : 'text-black'}`}>Contact</span> Me!
+          <span className="text-[var(--text-color)]">Contact</span> Me!
         </h1>
 
         <form data-aos="fade-left" data-aos-duration="1500"
@@ -60,7 +60,7 @@ const Contact = ({ dark }) => {
 
           {/* Submit Button */}
           <div className="flex justify-center items-center">
-            <input 
+            <input
               type="submit"
               value="Send Message"
               className="bg-[var(--main-color)] text-white text-lg w-full sm:w-auto px-8 py-3 rounded-lg hover:brightness-110 transition cursor-pointer"

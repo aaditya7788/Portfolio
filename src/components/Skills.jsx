@@ -14,13 +14,13 @@ const skills = [
 
 ];
 
-const Skills = ({dark}) => {
-  
+const Skills = ({ dark }) => {
+
 
   return (
     <section id="skills" className="py-20 overflow-hidden">
       <div className="container mx-auto flex flex-col items-center">
-        <h1 className={`text-2xl md:text-6xl font-bold text-center mb-16 ${dark ? 'text-white' : 'text-black'}`}>
+        <h1 className="text-2xl md:text-6xl font-bold text-center mb-16 text-[var(--text-color)]">
           My <span className="text-[var(--main-color)]">Skills</span>
         </h1>
 
@@ -32,16 +32,15 @@ const Skills = ({dark}) => {
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className={`w-full flex items-center justify-between ${
-                  index % 2 === 0 ? 'flex-row' : 'flex-reverse-row'
-                }`}
+                className={`w-full flex items-center justify-between ${index % 2 === 0 ? 'flex-row' : 'flex-reverse-row'
+                  }`}
                 data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
               >
                 {/* Skill text + icon */}
                 <div className="w-1/2 flex justify-end items-center gap-4 pr-4">
                   {index % 2 === 0 ? (
                     <>
-                      <span className={`${dark?'text-white':'text-black'} text-xl md:text-2xl font-medium`}>{skill.name}</span>
+                      <span className="text-[var(--text-color)] text-xl md:text-2xl font-medium">{skill.name}</span>
                       <i className={`bx ${skill.icon} text-2xl md:text-4xl text-[var(--main-color)]`}></i>
                     </>
                   ) : (
@@ -57,7 +56,7 @@ const Skills = ({dark}) => {
                   {index % 2 !== 0 ? (
                     <>
                       <i className={`bx ${skill.icon} text-2xl md:text-4xl text-[var(--main-color)]`}></i>
-                      <span className={`${dark?'text-white':'text-black'} text-xl md:text-2xl font-medium`}>{skill.name}</span>
+                      <span className="text-[var(--text-color)] text-xl md:text-2xl font-medium">{skill.name}</span>
                     </>
                   ) : (
                     <></>

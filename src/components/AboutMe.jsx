@@ -14,11 +14,11 @@ const AboutMe = ({ dark }) => {
       {/* Text Content */}
       <div className="w-full md:w-[40%] text-center md:text-left">
         <div data-aos="fade-left" data-aos-duration="1000" className="flex flex-wrap justify-center md:justify-start gap-x-2">
-          <h1 className={`text-4xl md:text-5xl font-bold ${!dark ? 'text-[var(--text-color)]' : 'text-white'}`}>About</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--text-color)]">About</h1>
           <h1 className="text-[var(--main-color)] text-4xl md:text-5xl font-bold">Me</h1>
         </div>
 
-        <p data-aos="fade-left" data-aos-duration="1500" className={`mt-4 text-lg md:text-xl leading-relaxed ${!dark ? 'text-[var(--text-color)]' : 'text-white'}`}>
+        <p data-aos="fade-left" data-aos-duration="1500" className="mt-4 text-lg md:text-xl leading-relaxed text-[var(--text-color)]">
           I'm <span className="text-[var(--main-color)] font-bold">Aaditya Sahani</span>, a full-stack developer skilled in the MERN stack and React Native. I specialize in building modern, responsive web and mobile applications with clean, efficient code. Currently freelancing and always exploring new technologies to grow and deliver better solutions.
         </p>
 
