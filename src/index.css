@@ -2,9 +2,9 @@
   @tailwind components;
   @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
 
 
@@ -22,17 +22,18 @@ html {
   .dark {
     --bg-color: #10041c;
     --text-color: #ffffff;
-    --main-color: #a855f7; /* Optional: slightly brighter main color in dark mode */
+    --main-color: #a855f7;
+    /* Optional: slightly brighter main color in dark mode */
   }
 
 
   :root {
-      --bs-breakpoint-xs: 0;
-      --bs-breakpoint-sm: 576px;
-      --bs-breakpoint-md: 768px;
-      --bs-breakpoint-lg: 992px;
-      --bs-breakpoint-xl: 1200px;
-      --bs-breakpoint-xxl: 1400px;
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
   }
 
   .profession-circle {
@@ -43,17 +44,20 @@ html {
     z-index: -30;
   }
 
-.profession {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
-  text-align: center;
-  color: var(--main-color);
-  padding: auto; /* or tweak as needed */
-  z-index: 2; /* Ensure it appears above the circle */
-  transform: translate(-50%, -50%); /* 💥 Centering fix */
-}
+  .profession {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    text-align: center;
+    color: var(--main-color);
+    padding: auto;
+    /* or tweak as needed */
+    z-index: 2;
+    /* Ensure it appears above the circle */
+    transform: translate(-50%, -50%);
+    /* 💥 Centering fix */
+  }
 
 
 
@@ -70,15 +74,17 @@ html {
   }
 
   @media (max-width: 640px) {
-  .profession i {
-    font-size: 2.5rem; /* Smaller icon for mobile */
-  }
+    .profession i {
+      font-size: 2.5rem;
+      /* Smaller icon for mobile */
+    }
 
-  .profession h3 {
-    font-size: 1.25rem; /* Smaller heading */
-    margin-top: 0.25rem;
+    .profession h3 {
+      font-size: 1.25rem;
+      /* Smaller heading */
+      margin-top: 0.25rem;
+    }
   }
-}
 
   .circle {
     position: absolute;
@@ -92,21 +98,30 @@ html {
 
   /* Optional slow rotation */
   @keyframes spin-slow {
-  0%, 20% {
+
+    0%,
+    20% {
       transform: rotate(0deg);
-  }
-  25%, 45% {
+    }
+
+    25%,
+    45% {
       transform: rotate(-90deg);
-  }
-  50%, 70% {
+    }
+
+    50%,
+    70% {
       transform: rotate(-180deg);
-  }
-  75%, 95% {
+    }
+
+    75%,
+    95% {
       transform: rotate(-270deg);
-  }
-  100% {
+    }
+
+    100% {
       transform: rotate(-360deg);
-  }
+    }
   }
 
   .animate-spin-slow {
@@ -114,11 +129,10 @@ html {
   }
 
 
-/* In your CSS or Tailwind global styles */
-@media (max-width: 640px) {
-  .clip-top-half {
- clip-path: ellipse(100% 50% at 50% 50%);
-}
+  /* In your CSS or Tailwind global styles */
+  @media (max-width: 640px) {
+    .clip-top-half {
+      clip-path: ellipse(100% 50% at 50% 50%);
+    }
 
-}
-
+  }

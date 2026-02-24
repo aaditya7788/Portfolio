@@ -4,7 +4,7 @@ const AboutMe = ({ dark }) => {
   return (
     <section
       id="about"
-      className="relative flex flex-col md:flex-row justify-center items-center gap-y-12 md:gap-x-20 px-6 md:px-20 mt-[8rem] mb-[8rem]"
+      className="relative flex flex-col md:flex-row justify-center items-center gap-y-12 md:gap-x-20 px-6 md:px-20 mt-10 md:mt-[8rem] mb-[8rem]"
     >
       {/* Profile Image */}
       <div className="w-[80%] md:w-[40%] mt-[5vh] border-8 border-[var(--main-color)] bg-main rounded-xl overflow-hidden">
