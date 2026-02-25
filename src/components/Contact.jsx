@@ -2,11 +2,11 @@ import React from 'react';
 
 const Contact = ({ dark }) => {
   return (
-    <section id='contact' className='py-20 px-4 sm:px-8'>
+    <section id='contact' aria-label="Contact section" className='py-20 px-4 sm:px-8'>
       <div className='container mx-auto flex flex-col items-center'>
-        <h1 data-aos="fade-up" data-aos-duration="1000" className='text-3xl sm:text-5xl font-bold text-center mb-16 text-[var(--main-color)]'>
+        <h2 data-aos="fade-up" data-aos-duration="1000" className='text-3xl sm:text-5xl font-bold text-center mb-16 text-[var(--main-color)]'>
           <span className="text-[var(--text-color)]">Contact</span> Me!
-        </h1>
+        </h2>
 
         <form data-aos="fade-left" data-aos-duration="1500"
           action="https://formspree.io/f/xyzjkydj"

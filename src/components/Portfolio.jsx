@@ -89,13 +89,14 @@ const Portfolio = ({ dark }) => {
   return (
     <section
       id="portfolio"
+      aria-label="Portfolio projects section"
       className="relative flex flex-col items-center justify-center mt-[10rem] mb-[10rem] overflow-hidden"
     >
       {/* Heading */}
       <div className="flex-wrap gap-x-4 mb-10">
-        <h1 className="font-bold text-2xl md:text-6xl text-[var(--text-color)]">
-          Latest <span className="text-[var(--main-color)]">Scratch</span> Projects
-        </h1>
+        <h2 className="font-bold text-2xl md:text-6xl text-[var(--text-color)]">
+          Featured <span className="text-[var(--main-color)]">Projects</span>
+        </h2>
       </div>
 
       {/* Loading skeleton */}
@@ -126,7 +127,7 @@ const Portfolio = ({ dark }) => {
             >
               <img
                 src={project.image}
-                alt={project.title}
+                alt={`${project.title} - Portfolio Project by Aaditya Sahani`}
                 className="w-full h-full object-cover transform duration-300 group-hover:scale-110"
                 onError={(e) => {
                   e.target.src =
@@ -144,6 +145,7 @@ const Portfolio = ({ dark }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--main-color)] text-xl hover:scale-110 transition-transform duration-300"
+                  aria-label={`View ${project.title} live demo`}
                 >
                   <i className="bx bx-link-external text-2xl md:text-4xl"></i>
                 </a>

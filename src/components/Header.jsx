@@ -34,12 +34,14 @@ const Header = ({ dark, setdark }) => {
     `}
     >
 
-      <h1 className='text-[var(--main-color)] font-bold text-[1.5rem] md:text-[2rem]'
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
-      >Aaditya.</h1>
+      <a href="#home" aria-label="Aaditya Sahani – Back to top">
+        <span className='text-[var(--main-color)] font-bold text-[1.5rem] md:text-[2rem]'
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >Aaditya.</span>
+      </a>
 
       {/* Desktop Navigation: links and dark mode toggle */}
 

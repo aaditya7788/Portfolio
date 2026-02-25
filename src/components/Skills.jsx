@@ -18,11 +18,11 @@ const Skills = ({ dark }) => {
 
 
   return (
-    <section id="skills" className="py-20 overflow-hidden">
+    <section id="skills" aria-label="Skills section" className="py-20 overflow-hidden">
       <div className="container mx-auto flex flex-col items-center">
-        <h1 className="text-2xl md:text-6xl font-bold text-center mb-16 text-[var(--text-color)]">
+        <h2 className="text-2xl md:text-6xl font-bold text-center mb-16 text-[var(--text-color)]">
           My <span className="text-[var(--main-color)]">Skills</span>
-        </h1>
+        </h2>
 
         <div className="relative w-full max-w-4xl">
           {/* center vertical line */}
