@@ -20,9 +20,13 @@ const Skills = ({ dark }) => {
   return (
     <section id="skills" aria-label="Skills section" className="py-20 overflow-hidden">
       <div className="container mx-auto flex flex-col items-center">
-        <h2 className="text-2xl md:text-6xl font-bold text-center mb-16 text-[var(--text-color)]">
-          My <span className="text-[var(--main-color)]">Skills</span>
+        <h2 className="text-2xl md:text-6xl font-bold text-center mb-6 text-[var(--text-color)]">
+          Aaditya Sahani's <span className="text-[var(--main-color)]">Technical Skills</span>
         </h2>
+        <p className="text-center text-[var(--text-color)] opacity-80 max-w-2xl mb-16 text-lg">
+          As a focused full-stack developer, I have built a versatile skill set covering modern frontend frameworks,
+          robust backend architectures, and mobile app development using the latest JavaScript technologies.
+        </p>
 
         <div className="relative w-full max-w-4xl">
           {/* center vertical line */}
@@ -41,7 +45,7 @@ const Skills = ({ dark }) => {
                   {index % 2 === 0 ? (
                     <>
                       <span className="text-[var(--text-color)] text-xl md:text-2xl font-medium">{skill.name}</span>
-                      <i className={`bx ${skill.icon} text-2xl md:text-4xl text-[var(--main-color)]`}></i>
+                      <i className={`bx ${skill.icon} text-2xl md:text-4xl text-[var(--main-color)]`} aria-hidden="true"></i>
                     </>
                   ) : (
                     <></>
@@ -49,13 +53,13 @@ const Skills = ({ dark }) => {
                 </div>
 
                 {/* Divider dot */}
-                <div className="w-4 h-4 rounded-full bg-[var(--main-color)]"></div>
+                <div className="w-4 h-4 rounded-full bg-[var(--main-color)]" aria-hidden="true"></div>
 
                 {/* Icon + Skill text for reverse */}
                 <div className="w-1/2 flex justify-start items-center gap-4 pl-4">
                   {index % 2 !== 0 ? (
                     <>
-                      <i className={`bx ${skill.icon} text-2xl md:text-4xl text-[var(--main-color)]`}></i>
+                      <i className={`bx ${skill.icon} text-2xl md:text-4xl text-[var(--main-color)]`} aria-hidden="true"></i>
                       <span className="text-[var(--text-color)] text-xl md:text-2xl font-medium">{skill.name}</span>
                     </>
                   ) : (

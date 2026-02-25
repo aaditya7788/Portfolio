@@ -32,23 +32,26 @@ function App() {
     <div className="bg-[var(--bg-color)] min-h-screen transition-colors duration-300">
       <Header dark={dark} setdark={setdark} />
 
-      <div className="overflow-hidden px-4 md:px-28">
+      {/* ✅ Semantic <main> landmark — helps crawlers & screen readers */}
+      <main id="main-content" className="overflow-hidden px-4 md:px-28">
         <Hero dark={dark} setdark={setdark} />
         <AboutMe dark={dark} />
         <Portfolio dark={dark} />
         <Skills dark={dark} />
         <Contact dark={dark} />
         <Footer />
-      </div>
+      </main>
 
-      {/* Admin gear button — bottom right corner */}
+      {/* Admin gear button — bottom right corner, hidden from accessibility tree */}
       <button
         onClick={() => setShowAdmin(true)}
         title="Admin Panel"
         className="fixed bottom-6 right-6 z-50 w-10 h-10 flex items-center justify-center rounded-full bg-gray-300/30 hover:bg-[var(--main-color)] text-gray-500 hover:text-white transition-all duration-300 backdrop-blur-sm shadow-lg opacity-30 hover:opacity-100"
         aria-label="Open admin panel"
+        aria-hidden="true"
+        tabIndex={-1}
       >
-        <i className="bx bx-cog text-xl" />
+        <i className="bx bx-cog text-xl" aria-hidden="true" />
       </button>
 
       {showAdmin && (

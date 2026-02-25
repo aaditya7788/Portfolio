@@ -76,11 +76,13 @@ const Header = ({ dark, setdark }) => {
         <button data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="2000"
-          onClick={() => setdark(!dark)}>
+          onClick={() => setdark(!dark)}
+          aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+        >
           {
             dark ?
-              < i class='bx  bx-brightness'  ></i>
-              : < i class='bx  bx-moon'  ></i>
+              < i className='bx  bx-brightness' aria-hidden="true"></i>
+              : < i className='bx  bx-moon' aria-hidden="true"></i>
           }
         </button>
       </nav>
@@ -95,11 +97,12 @@ const Header = ({ dark, setdark }) => {
           className={`p-2 rounded-full transition-all duration-300
       ${isScrolled ? (dark ? '' : '') : 'bg-transparent'}
       hover:text-gray-500`}
+          aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
         >
           {dark ? (
-            <i className="bx bx-brightness text-xl text-white"></i>
+            <i className="bx bx-brightness text-xl text-white" aria-hidden="true"></i>
           ) : (
-            <i className="bx bx-moon text-xl text-black"></i>
+            <i className="bx bx-moon text-xl text-black" aria-hidden="true"></i>
           )}
         </button>
 
@@ -112,10 +115,13 @@ const Header = ({ dark, setdark }) => {
           className={`p-2 text-xl transition-all duration-300
       ${isScrolled ? (dark ? '' : '') : 'bg-transparent'}
       hover: text-gray-500`}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
         >
           <i
             className={`${menuOpen ? 'bx bx-x' : 'bx bx-menu'} text-2xl ${dark ? 'text-white' : 'text-black'
               }`}
+            aria-hidden="true"
           />
 
         </button>

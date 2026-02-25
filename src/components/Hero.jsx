@@ -66,11 +66,11 @@ const Hero = ({ dark }) => {
                 <div className="flex items-center gap-4 mt-6" aria-label="Social media links">
                     <a
                         data-aos="fade-up" data-aos-duration="1000"
-                        href="mailto:aadityasahani78@gmail.com"
+                        href={`mailto:${'aadityasahani78' + '@' + 'gmail.com'}`}
                         target="_blank" rel="noopener noreferrer"
                         aria-label="Email Aaditya Sahani"
                     >
-                        <i className="bx bxl-gmail text-[var(--main-color)] border p-4 rounded-full border-[var(--main-color)] hover:bg-[var(--main-color)] hover:text-white transition" />
+                        <i className="bx bxl-gmail text-[var(--main-color)] border p-4 rounded-full border-[var(--main-color)] hover:bg-[var(--main-color)] hover:text-white transition" aria-hidden="true" />
                     </a>
                     <a
                         data-aos="fade-up" data-aos-duration="1200"

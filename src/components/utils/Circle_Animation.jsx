@@ -26,7 +26,7 @@ const Circle_Animation = ({ dark }) => {
                             style={{ transform: fullTransform }}
                         >
                             <i className={item.icon}></i>
-                            <h3>{item.label}</h3>
+                            <span className="block text-lg md:text-2xl font-semibold mt-2">{item.label}</span>
                         </div>
                     );
                 })}

@@ -81,13 +81,13 @@ const Footer = () => {
             {socialLinks.map(({ label, href, icon }) => (
               <a
                 key={label}
-                href={href}
-                target={href.startsWith('mailto') ? undefined : '_blank'}
+                href={label === 'Email' ? `mailto:${'aadityasahani78' + '@' + 'gmail.com'}` : href}
+                target={href.startsWith('mailto') || label === 'Email' ? undefined : '_blank'}
                 rel="noopener noreferrer"
                 aria-label={`${label} – Aaditya Sahani`}
                 className="flex items-center gap-1.5 text-sm text-white/75 hover:text-white transition-colors duration-200 group"
               >
-                <i className={`bx ${icon} text-lg group-hover:scale-110 transition-transform`} />
+                <i className={`bx ${icon} text-lg group-hover:scale-110 transition-transform`} aria-hidden="true" />
                 <span>{label}</span>
               </a>
             ))}

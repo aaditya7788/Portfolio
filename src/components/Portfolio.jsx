@@ -93,10 +93,14 @@ const Portfolio = ({ dark }) => {
       className="relative flex flex-col items-center justify-center mt-[10rem] mb-[10rem] overflow-hidden"
     >
       {/* Heading */}
-      <div className="flex-wrap gap-x-4 mb-10">
-        <h2 className="font-bold text-2xl md:text-6xl text-[var(--text-color)]">
-          Featured <span className="text-[var(--main-color)]">Projects</span>
+      <div className="flex flex-col items-center gap-y-4 mb-12 px-4">
+        <h2 className="font-bold text-2xl md:text-6xl text-[var(--text-color)] text-center">
+          Featured <span className="text-[var(--main-color)]">Development Projects</span> by Aaditya Sahani
         </h2>
+        <p className="text-center text-[var(--text-color)] opacity-80 max-w-3xl text-lg">
+          Explore my latest work as a full-stack developer, including blockchain governance platforms, social applications,
+          and AI-integrated systems built with React.js, Next.js, and Node.js.
+        </p>
       </div>
 
       {/* Loading skeleton */}
